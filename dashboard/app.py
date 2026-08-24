@@ -1,5 +1,5 @@
 """
-PulsePoint AI — Clinical Risk Dashboard
+PulsePoint AI: Clinical Risk Dashboard
 
 Three views:
 - Command Center: ward-wide overview of every monitored patient, sorted by risk
@@ -83,11 +83,11 @@ def readable(feat):
 
 def risk_badge_html(risk, high=0.5, moderate=0.2):
     if risk >= high:
-        return f'<span class="risk-badge risk-critical">🚨 CRITICAL — {risk:.1%}</span>'
+        return f'<span class="risk-badge risk-critical"> CRITICAL: {risk:.1%}</span>'
     elif risk >= moderate:
-        return f'<span class="risk-badge risk-elevated">⚠️ ELEVATED — {risk:.1%}</span>'
+        return f'<span class="risk-badge risk-elevated"> ELEVATED: {risk:.1%}</span>'
     else:
-        return f'<span class="risk-badge risk-low">🟢 LOWER RISK — {risk:.1%}</span>'
+        return f'<span class="risk-badge risk-low"> LOWER RISK: {risk:.1%}</span>'
 
 
 def sentinel_narrative(shap_series, direction="up"):
