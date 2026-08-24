@@ -1,8 +1,8 @@
 # Clinical Risk Sentinel
 
 A two-module clinical risk platform:
-- **Sepsis Early-Warning** — predicts sepsis onset from ICU vital-sign/lab time series (PhysioNet/CinC 2019 Challenge data)
-- **Readmission Risk Scorer** — predicts 30-day hospital readmission risk at discharge (UCI Diabetes 130-US Hospitals dataset)
+- **Sepsis Early-Warning**: This predicts sepsis onset from ICU vital-sign/lab time series (PhysioNet/CinC 2019 Challenge data)
+- **Readmission Risk Scorer**: This predicts 30-day hospital readmission risk at discharge (UCI Diabetes 130-US Hospitals dataset)
 
 Both datasets are public and de-identified. No models are deployed on real patients.
 
