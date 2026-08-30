@@ -18,7 +18,7 @@ import matplotlib.pyplot as plt
 import shap
 import streamlit as st
 
-# ---------------------------------------------------------------------------
+
 # Paths
 # ---------------------------------------------------------------------------
 DASHBOARD_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -28,7 +28,7 @@ SAMPLE_DIR = os.path.join(DASHBOARD_DIR, "sample_data")
 
 st.set_page_config(page_title="PulsePoint AI", layout="wide", page_icon="🩺")
 
-# ---------------------------------------------------------------------------
+
 # Styling
 # ---------------------------------------------------------------------------
 st.markdown("""
@@ -113,7 +113,7 @@ def sentinel_narrative(shap_series, direction="up"):
     return f"Primarily {verb}: {joined}."
 
 
-# ---------------------------------------------------------------------------
+
 # Cached loaders
 # ---------------------------------------------------------------------------
 @st.cache_resource
@@ -222,7 +222,7 @@ sepsis_df = load_sepsis_sample()
 
 tab_command, tab_discharge, tab_icu = st.tabs(["🏠 Command Center", "📋 Discharge Risk", "🫀 ICU Monitoring"])
 
-# ---------------------------------------------------------------------------
+
 # TAB 0: Command Center
 # ---------------------------------------------------------------------------
 with tab_command:
@@ -275,7 +275,7 @@ with tab_command:
             hide_index=True, use_container_width=True, height=350,
         )
 
-# ---------------------------------------------------------------------------
+
 # TAB 1: Discharge Risk
 # ---------------------------------------------------------------------------
 with tab_discharge:
@@ -323,7 +323,7 @@ with tab_discharge:
         st.pyplot(fig)
         plt.close(fig)
 
-# ---------------------------------------------------------------------------
+
 # TAB 2: ICU Monitoring — with playback
 # ---------------------------------------------------------------------------
 with tab_icu:
